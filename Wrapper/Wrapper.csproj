@@ -4,5 +4,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Proto.Actor" Version="0.1.16" />
+    <PackageReference Include="Proto.Cluster.Consul" Version="0.1.16" />
   </ItemGroup>
 </Project>
