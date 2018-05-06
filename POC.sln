@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wrapper", "Wrapper\Wrapper.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaService", "LambdaService\LambdaService.csproj", "{00B3ECAF-F6BE-4878-81AC-14002029BED6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{2417E87A-4241-4591-8A8E-E0D1C0105ED7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{84C25783-C54E-4ADB-BAEA-9C67E72AD617}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +20,9 @@ Global
 		{00B3ECAF-F6BE-4878-81AC-14002029BED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00B3ECAF-F6BE-4878-81AC-14002029BED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00B3ECAF-F6BE-4878-81AC-14002029BED6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2417E87A-4241-4591-8A8E-E0D1C0105ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2417E87A-4241-4591-8A8E-E0D1C0105ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2417E87A-4241-4591-8A8E-E0D1C0105ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2417E87A-4241-4591-8A8E-E0D1C0105ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84C25783-C54E-4ADB-BAEA-9C67E72AD617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C25783-C54E-4ADB-BAEA-9C67E72AD617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C25783-C54E-4ADB-BAEA-9C67E72AD617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C25783-C54E-4ADB-BAEA-9C67E72AD617}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

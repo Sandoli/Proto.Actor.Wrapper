@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Messages;
 using Wrapper;
 
 namespace LambdaService
@@ -22,10 +23,10 @@ namespace LambdaService
             var config = ServiceFactory.CreateConfig<Service1>();
 
             var serviceId = ServiceFactory.Create(config);
-//            serviceId.SendMessage(new Hello
-//            {
-//                Who = "MicroService";
-//            });
+            serviceId.SendMessage(new Hello
+            {
+                Who = "MicroService"
+            });
         }
     }
 }
