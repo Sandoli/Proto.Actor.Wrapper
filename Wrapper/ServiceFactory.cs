@@ -9,11 +9,12 @@ namespace Wrapper
     public static class ServiceFactory
     {
         public static IServiceConfig CreateConfig<T>(string name) where T : IService, new()
-        {            
-            var props = Actor.FromProducer(() => new ActorAdapter(new T()));  
-            
+        {
+            var props = Actor.FromProducer(() => new ActorAdapter(new T()));
+
+            // TODO Make this not throw?
             Remote.RegisterKnownKind(name, props);
-            
+
             return new ServiceConfig(name, props);
         }
 
@@ -24,7 +25,7 @@ namespace Wrapper
                 var props = Remote.GetKnownKind(name);
                 return new ServiceConfig(name, props);
             }
-            catch (ArgumentException e)
+            catch (ArgumentException)
             {
                 return null;
             }
@@ -32,17 +33,16 @@ namespace Wrapper
 
         public static IServicePid Create(IServiceConfig config)
         {
-            if (config is ServiceConfig concreteConfig)
+            switch (config)
             {
-                var pid = Actor.Spawn(concreteConfig.Props);
-
-
-                return new ServicePid(pid);
+                case ServiceConfig concreteConfig:
+                    var pid = Actor.Spawn(concreteConfig.Props);
+                    return new ServicePid(pid);
             }
 
             return null;
         }
-        
+
         //public static IServicePid CreateRemote(IServiceConfig config, )
     }
 }

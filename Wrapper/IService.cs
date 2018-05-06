@@ -14,17 +14,17 @@ namespace Wrapper
 
         public Context(Proto.IContext impl)
         {
-            _impl = impl;            
+            _impl = impl;
         }
 
         public object Message => _impl.Message;
     }
-    
+
     public interface IService
     {
         Task ReceiveAsync(IContext context);
     }
-    
+
     internal class ActorAdapter : IActor
     {
         private readonly IService _service;

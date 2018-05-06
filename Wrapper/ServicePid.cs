@@ -43,7 +43,7 @@ namespace Wrapper
         {
             return _pid.RequestAsync<T>(message);
         }
-        
+
         public void Stop()
         {
             _pid.Stop();

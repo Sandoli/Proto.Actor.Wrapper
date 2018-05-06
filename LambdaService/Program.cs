@@ -15,16 +15,13 @@ namespace LambdaService
     {
         public Task ReceiveAsync(IContext context)
         {
-            if (context.Message is Hello message)
-            {
-                Console.WriteLine($"Message is {message.Who}");
-            }
+            if (context.Message is Hello message) Console.WriteLine($"Message is {message.Who}");
 
             return Service.Done;
         }
     }
 
-    static class Program
+    internal static class Program
     {
         private static void Main()
         {
@@ -36,7 +33,7 @@ namespace LambdaService
             {
                 Who = "MicroService"
             });
-            
+
             Thread.Sleep(10000);
         }
     }

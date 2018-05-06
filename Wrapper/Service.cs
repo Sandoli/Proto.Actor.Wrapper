@@ -6,6 +6,5 @@ namespace Wrapper
     public static class Service
     {
         public static readonly Task Done = Actor.Done;
-        
     }
 }
