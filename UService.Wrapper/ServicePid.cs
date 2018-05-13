@@ -2,8 +2,9 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Proto;
+using UService.Interface;
 
-namespace Wrapper
+namespace UService.Wrapper
 {
     public class ServicePid : IServicePid
     {
@@ -24,9 +25,9 @@ namespace Wrapper
             _pid.SendSystemMessage(sys);
         }
 
-        public void Request(object message, PID sender)
+        public void Request(object message, IServicePid sender)
         {
-            _pid.Request(message, sender);
+            if (sender is ServicePid concreteSender) _pid.Request(message, concreteSender._pid);
         }
 
         public Task<T> RequestAsync<T>(object message, TimeSpan timeout)

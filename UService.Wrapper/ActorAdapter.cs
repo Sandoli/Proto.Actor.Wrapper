@@ -1,30 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Proto;
+using UService.Interface; 
 
-namespace Wrapper
+namespace UService.Wrapper
 {
-    public interface IContext
-    {
-        object Message { get; }
-    }
-
-    public class Context : IContext
-    {
-        private readonly Proto.IContext _impl;
-
-        public Context(Proto.IContext impl)
-        {
-            _impl = impl;
-        }
-
-        public object Message => _impl.Message;
-    }
-
-    public interface IService
-    {
-        Task ReceiveAsync(IContext context);
-    }
-
     internal class ActorAdapter : IActor
     {
         private readonly IService _service;

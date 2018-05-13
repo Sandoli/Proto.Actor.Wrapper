@@ -2,7 +2,8 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Messages;
-using Wrapper;
+using UService.Interface;
+using UService.Wrapper;
 
 namespace LambdaService
 {

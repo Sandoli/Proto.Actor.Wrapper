@@ -10,6 +10,7 @@
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Wrapper\Wrapper.csproj" />
+    <ProjectReference Include="..\UService.Interface\UService.Interface.csproj" />
+    <ProjectReference Include="..\UService.Wrapper\UService.Wrapper.csproj" />
   </ItemGroup>
 </Project>

@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Proto;
 
-namespace Wrapper
+namespace UService.Interface
 {
     public interface IServicePid
     {
         void SendMessage(object message);
         void SendSystemMessage(object sys);
-        void Request(object message, PID sender);
+        void Request(object message, IServicePid sender);
         Task<T> RequestAsync<T>(object message, TimeSpan timeout);
         Task<T> RequestAsync<T>(object message, CancellationToken cancellationToken);
         Task<T> RequestAsync<T>(object message);

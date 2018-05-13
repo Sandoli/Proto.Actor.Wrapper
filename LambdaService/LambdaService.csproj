@@ -5,6 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Messages\Messages.csproj" />
-    <ProjectReference Include="..\Wrapper\Wrapper.csproj" />
+    <ProjectReference Include="..\UService.Interface\UService.Interface.csproj" />
+    <ProjectReference Include="..\UService.Wrapper\UService.Wrapper.csproj" />
   </ItemGroup>
 </Project>

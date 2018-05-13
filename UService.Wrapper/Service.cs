@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Proto;
 
-namespace Wrapper
+namespace UService.Wrapper
 {
     public static class Service
     {

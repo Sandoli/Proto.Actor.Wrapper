@@ -1,5 +1,7 @@
 using System;
 using System.Threading.Tasks;
+using UService.Interface;
+using UService.Wrapper;
 using Xunit;
 
 namespace Wrapper.Test

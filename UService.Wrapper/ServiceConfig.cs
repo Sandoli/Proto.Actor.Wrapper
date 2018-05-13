@@ -1,6 +1,7 @@
 ﻿using Proto;
+using UService.Interface;
 
-namespace Wrapper
+namespace UService.Wrapper
 {
     public sealed class ServiceConfig : IServiceConfig
     {

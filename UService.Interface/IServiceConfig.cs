@@ -1,4 +1,4 @@
-﻿namespace Wrapper
+﻿namespace UService.Interface
 {
     public interface IServiceConfig
     {

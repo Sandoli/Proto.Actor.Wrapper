@@ -1,10 +1,9 @@
 ﻿using System;
 using Proto;
 using Proto.Remote;
+using UService.Interface;
 
-//using Proto.Remote;
-
-namespace Wrapper
+namespace UService.Wrapper
 {
     public static class ServiceFactory
     {
